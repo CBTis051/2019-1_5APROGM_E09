@@ -4,4 +4,4 @@ http.createServer(function (req, res) {
 
 res.end('Hola mundo Node JS Repo GIT – Quiroz Vega Kevin Alexis\n');
 }).listen(8081);
-Console.log('Server running on port 8081');
+console.log('Server running on port 8081');
