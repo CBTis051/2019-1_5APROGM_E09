@@ -1,7 +1,14 @@
 var http = require('http');
 http.createServer(function (req, res) {
-	res.writeHead(200, {'Content-Type': 'application/json; chartset=utf-8' });
 
-res.end('Hola mundo Node JS Repo GIT – Quiroz Vega Kevin Alexis\n');
+    res.writeHead(200, {'Content-Type': 'application/json; charset=utf-8'});
+
+    var objeto = {
+        mensaje : 'Hola mundo Node JS Repo GIT - Quiroz Vega Kevin Alexis\n'
+    };
+
+    var json = JSON.stringify(objeto);
+
+    res.end(json);
 }).listen(8081);
-Console.log('Server running on port 8081');
+console.log('Server running on port 8081 ');
